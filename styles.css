@@ -16,6 +16,8 @@
     --green :#2E7258;
     --darkBlue : #204c75;
     --lightGreen : #19888c;
+    --timeLine : #204c75;
+    /* --timeLine : #F45B69; */
 }
 body{
     font-family: 'Roboto Mono', monospace;
@@ -429,18 +431,18 @@ padding: 0.25rem 1rem;
      letter-spacing: 0.2rem;
      padding: 0.5rem 0.5rem;
      color: var(--light);
-     font-style: italic;
+     /* font-style: italic; */
      transition: var(--mainTransition);
      cursor: pointer;
  }
  .nav__single-link:hover{
      background: var(--SectionGrey);
-     padding-left:1.7rem;
+     /* padding-left:1.7rem; */
  }
  .show{
      height: 288px;
  }
- @media screen and (min-width:1070px){
+ @media screen and (min-width:1300px){
      .nav__btn{
          display: none;
      }
@@ -454,7 +456,7 @@ padding: 0.25rem 1rem;
          transform: translate(-50%,-50%);
      }
      .nav__single-link:hover{
-        padding-left: 1rem;
+        /* padding-left: 1rem; */
         color:var(--orange);
         background: transparent;
      }
@@ -495,7 +497,7 @@ padding: 0.25rem 1rem;
     bottom: 0;
     width: 400px;
     padding: 15px;
-    background: #F45B69;
+    background: var(--timeLine);
   }
   
   .timeline ul li div::before {
@@ -514,7 +516,7 @@ padding: 0.25rem 1rem;
   .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent var(--timeLine) transparent transparent;
   }
   
   .timeline ul li:nth-child(even) div {
@@ -524,7 +526,7 @@ padding: 0.25rem 1rem;
   .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #F45B69;
+    border-color: transparent transparent transparent var(--timeLine);
   }
   
   time {
@@ -543,7 +545,7 @@ padding: 0.25rem 1rem;
   }
   
   .timeline ul li.in-view::after {
-    background: #F45B69;
+    background: var(--timeLine);
   }
   
   .timeline ul li div {
@@ -593,7 +595,7 @@ padding: 0.25rem 1rem;
     .timeline ul li:nth-child(even) div::before {
       left: -15px;
       border-width: 8px 16px 8px 0;
-      border-color: transparent #F45B69 transparent transparent;
+      border-color: transparent var(--timeLine) transparent transparent;
     }
   }
  /* end of timeline */
